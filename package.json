@@ -1,0 +1,24 @@
+{
+  "name": "amp-nuxtjs",
+  "version": "1.0.0",
+  "description": "",
+  "author": "Nuxt.js Team",
+  "private": true,
+  "scripts": {
+    "dev": "MINIMAL=1 CSB=1 nuxt",
+    "build": "nuxt build",
+    "start": "nuxt start",
+    "generate": "nuxt generate",
+    "post-update": "yarn upgrade --latest"
+  },
+  "dependencies": {
+    "@nuxt/http": "0.6.0",
+    "@nuxtjs/amp": "0.4.0",
+    "@nuxtjs/axios": "5.12.2",
+    "node-sass": "4.14.1",
+    "nuxt": "2.14.7",
+    "reqlim": "0.0.0",
+    "sass-loader": "10.0.4"
+  },
+  "keywords": []
+}
