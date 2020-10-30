@@ -6,45 +6,14 @@
       </NuxtLink>
     </div>
     <div class="movie">
-      <amp-img
-        width="300"
-        height="444"
-        :src="movie.Poster"
-        :alt="`${movie.Title} Poster`"
-        layout="responsive"
-      />
-      <div class="movie__info">
-        <h1 class="movie__title">
-          {{ movie.Title }}
-          <h2 class="movie__subtitle">{{ movie.Year }}</h2>
-        </h1>
-        <div class="movie__general">
-          <span class="movie__general-entry">{{ movie.Rated }}</span>
-          <span class="movie__general-entry">{{ movie.Released }}</span>
-          <span class="movie__general-entry">{{ movie.Runtime }}</span>
-        </div>
-        <div class="movie__details">
-          <div class="movie__details-entry">
-            <h3 class="movie__details-entry-title">Genre</h3>
-            {{ movie.Genre }}
-          </div>
-          <div class="movie__details-entry">
-            <h3 class="movie__details-entry-title">Director</h3>
-            {{ movie.Director }}
-          </div>
-          <div class="movie__details-entry">
-            <h3 class="movie__details-entry-title">Writers</h3>
-            {{ movie.Writer }}
-          </div>
-          <div class="movie__details-entry">
-            <h3 class="movie__details-entry-title">Actors</h3>
-            {{ movie.Actors }}
-          </div>
-          <div class="movie__details-entry">
-            <h3 class="movie__details-entry-title">Plot</h3>
-            {{ movie.Plot }}
-          </div>
-        </div>
+      <div class="movie__img">
+        <amp-img
+          width="300"
+          height="444"
+          :src="movie.Poster"
+          :alt="`${movie.Title} Poster`"
+          layout="flex-item"
+        />
       </div>
     </div>
   </section>
@@ -99,7 +68,7 @@
 import api from "@/api";
 
 export default {
-  amp: "hybrid",
+  amp: "only",
   ampLayout: "amp",
 
   async asyncData({ params }) {
@@ -108,9 +77,9 @@ export default {
     const movie = response.data;
 
     return {
-      movie,
+      movie
     };
-  },
+  }
 };
 </script>
 

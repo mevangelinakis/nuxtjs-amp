@@ -15,6 +15,7 @@
     "@nuxt/http": "0.6.0",
     "@nuxtjs/amp": "0.4.0",
     "@nuxtjs/axios": "5.12.2",
+    "dotenv": "^8.2.0",
     "node-sass": "4.14.1",
     "nuxt": "2.14.7",
     "reqlim": "0.0.0",
