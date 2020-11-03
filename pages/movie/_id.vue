@@ -79,6 +79,10 @@ export default {
     return {
       movie
     };
+  },
+
+  mounted() {
+    alert(this.$isAMP);
   }
 };
 </script>

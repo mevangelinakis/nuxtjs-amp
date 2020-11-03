@@ -1,5 +1,4 @@
 export default {
-  mode: "universal",
   /*
    ** Headers of the page
    ** Doc: https://vue-meta.nuxtjs.org/api/#metainfo-properties
