@@ -13,8 +13,10 @@ import api from "@/api";
 import MovieCard from "@/components/MovieCard";
 
 export default {
+  amp: false,
+
   components: {
-    MovieCard,
+    MovieCard
   },
 
   async asyncData({ params }) {
@@ -23,9 +25,9 @@ export default {
     const movies = response.data.Search;
 
     return {
-      movies,
+      movies
     };
-  },
+  }
 };
 </script>
 

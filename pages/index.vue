@@ -16,19 +16,21 @@
 
 <script>
 export default {
+  amp: false,
+
   data: () => ({
-    term: "",
+    term: ""
   }),
 
   methods: {
     handleClick() {
       if (this.term.length) {
         this.$router.push({
-          path: `/search/${this.term}`,
+          path: `/search/${this.term}`
         });
       }
-    },
-  },
+    }
+  }
 };
 </script>
 
