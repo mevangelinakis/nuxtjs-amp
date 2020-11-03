@@ -68,7 +68,7 @@
 import api from "@/api";
 
 export default {
-  amp: "only",
+  amp: "hybrid",
   ampLayout: "amp",
 
   async asyncData({ params }) {
