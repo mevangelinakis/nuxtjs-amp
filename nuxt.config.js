@@ -1,4 +1,5 @@
 export default {
+  mode: "universal",
   /*
    ** Headers of the page
    ** Doc: https://vue-meta.nuxtjs.org/api/#metainfo-properties
@@ -31,6 +32,9 @@ export default {
    */
   plugins: [],
 
+  // Auto import components (https://go.nuxtjs.dev/config-components)
+  components: true,
+
   /*
    ** Nuxt.js modules
    ** Doc: https://nuxtjs.org/guide/modules
@@ -61,7 +65,6 @@ export default {
   },
 
   amp: {
-    origin: "http://localhost:3000",
     mode: false
   }
 };
