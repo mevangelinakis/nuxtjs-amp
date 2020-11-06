@@ -71,6 +71,7 @@ export default {
 
   amp: {
     mode: false,
-    origin: process.env.ORIGIN_URL || "http://localhost:3000"
+    origin:
+      "https://intense-stream-59512.herokuapp.com" || "http://localhost:3000"
   }
 };
