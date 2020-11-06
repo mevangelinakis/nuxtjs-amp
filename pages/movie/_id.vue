@@ -30,7 +30,7 @@
       <div class="movie__info">
         <h1 class="movie__title">
           {{ movie.Title }}
-          <h2 class="movie__subtitle">{{ movie.Year }}</h2>
+          <span class="movie__subtitle">{{ movie.Year }}</span>
         </h1>
         <div class="movie__general">
           <span class="movie__general-entry">{{ movie.Rated }}</span>

@@ -3,7 +3,7 @@
     <form action="" class="search" @submit.prevent>
       <div class="search__wrap">
         <input
-          v-model="term"
+          v-model.trim="term"
           name="term"
           placeholder="Search for a movie"
           class="search__input"
@@ -16,8 +16,6 @@
 
 <script>
 export default {
-  amp: false,
-
   data: () => ({
     term: ""
   }),

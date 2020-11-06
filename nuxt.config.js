@@ -1,3 +1,5 @@
+require("dotenv").config();
+
 export default {
   /*
    ** Headers of the page
@@ -65,5 +67,10 @@ export default {
      ** You can extend webpack config here
      */
     extend(config, ctx) {}
+  },
+
+  amp: {
+    mode: false,
+    origin: process.env.ORIGIN_URL || "http://localhost:3000"
   }
 };
