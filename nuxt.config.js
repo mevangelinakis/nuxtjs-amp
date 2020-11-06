@@ -70,8 +70,6 @@ export default {
   },
 
   amp: {
-    mode: false,
-    origin:
-      "https://intense-stream-59512.herokuapp.com" || "http://localhost:3000"
+    mode: false
   }
 };
